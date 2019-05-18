@@ -1,10 +1,10 @@
-.bbody {
+body {
     width: 1440px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
 }
 
-//<!-- -----header-top----- -->
+/* -------header-top------- */
 .header-top {
     background:  #f2f2f2;
     height: 38px;
@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    
 }
 
 .phone {
@@ -41,11 +42,6 @@
     border-right: 1px solid #000;
 }
 
-.top-menu a:hover {
-    contain: "";
-    border-bottom: 1px solid #000;
-}
-
 .top-menu li:last-child {
     border-right: none;
 } 
@@ -56,11 +52,8 @@
     text-transform: uppercase;
 }
 
-.mobile {
-    display: none;
-}
+/* ---------header-bottom--------- */
 
-//<!-- -------header-bottom------- -->
 .header-bottom {
     height: 128px;
     background: #fff;
@@ -73,7 +66,6 @@
 .bottom-menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 295px;
 }
 
@@ -86,11 +78,6 @@
     font-family:Playfair Display, serif;
     text-decoration: none;
     color: #000;
-}
-
-.bottom-menu a:hover {
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
 }
 
 @font-face {
@@ -148,19 +135,17 @@
     background: none;
 }
 
-.social-menu li:hover a {
+.social-menu a:hover {
     color: #7b7671;
 }
 
 /**************** active *************/ 
+ .social-menu a:active {
+    color: #000;
+}
 .social-menu li:active {
     background: #7b7671;
 }
-
-.social-menu li:active a {
-    color: #000;
-}
-/*****************************/ 
 
 option {
     width: 115px;
@@ -180,19 +165,13 @@ select {
     text-transform: uppercase;
 }
 
-//<!-- ----sale-2-girls-----  -->
-.main-girls {
-    background: url(../img/2girls2.jpg);
+/* ----------sale-2-girls  -- */
+.girls {
+    position: relative;
+    background: url(../img/2girls.jpg);
     background-repeat: no-repeat;
-    background-position-x: 50%;
     height: 692px;
     display: flex;
-    margin: 0 auto;
-}
-
-.girls {
-    display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -201,7 +180,7 @@ select {
 .sale {
     display: flex;
     flex-direction: column;
-    /* !!! в макете 257рх, но визуально бОльше за счет паддинга, заменила на 200рх */
+    /* !!! в макете 257рх, но визуально бОльше, заменила на 200рх */
     height: 200px;
     width: 200px;
     border: 5px double #fff;
@@ -256,29 +235,28 @@ select {
     font-size: 24px;
     font-family: 'Lato', sans-serif;
     margin-top: 50px;
-    transition: color 1s;
+    border: 1px solid #f09d66;
 }
 
-/************* hover ******************/
 .SHOP_NOW input:hover {
     background: #d9bf8f;
+    border: 1px solid #d9bf8f;
     color: #737373;
     font-weight: 900;
 }
-/*******************************/
 
 
-//<!-- ------pomb on 2girls----- -->
+/*  <!-- pomb --> */
 .rombss {
     display: flex;
     justify-content: space-between;
     width: 75px;
-    margin: 80px 0px 75px;
 }
           
 .romb {
     display: flex;
     justify-content: center;
+    margin-top: 80px;
     width: 15px;
     height: 15px;
     background: #b2b2b2;
@@ -287,41 +265,36 @@ select {
 
 .romb:hover {
     background: #000;
-}
-/*******************************/
+  }
+  /****** --слайдер"<" и ">"------ ******/
 
-//<!-- -----slider------- -->
 .arrow-left {
     position: absolute;
     top: 283px;
-    left: -30px;
-    height: 52px; 
+    left: 45px;
+    height: 52px;
 }
 
 .arrow-right {
     position: absolute;
     top: 283px;
-    right: -30px;
+    right: 45px;
     height: 52px;
 }
 
-.arrow-right a, .arrow-left a {
-    color: #fff;
-    font-size: 50px;
-    font-weight: 100;
-}
+/* <!-- ------support-------- --> */
 
-
-//<!-- ------support-------- -->
 .support {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // width: 1290px;
+    height: 100px;
+    width: 1290px;
     margin: 0 auto;
+    background: url(../img/support.png);
     color: #fff;
-    margin-bottom: 45px;
-    margin-top: 16px;
+    margin-top: 66px;
+    margin-bottom: 95px; 
 }
 
 .suppo-wrapper {
@@ -329,101 +302,9 @@ select {
     justify-content: space-between;
 }
 
-// ******** fon for support *********/ 
-.general {
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-// ************** left *****/
-.left {
-    width: 400px;
-    height: 100px;
-    background: #d9bf8f;
-    position: relative;
-    margin: 50px 20px;
-
-    &::before {
-        content: "";
-        border-bottom: 50px solid rgba(255, 255, 255, 0);
-        border-left: 50px solid  #d9bf8f;
-        border-right: 50px solid rgba(255, 255, 255, 0);
-        border-top: 50px solid rgba(255, 255, 255, 0);
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        top: 0px;
-        left: 100%;
-    }
-}
-
-// *************** center ******************/
-.center {
-    display: none;
-}
-
-.center-black {
-    width: 450px;
-    height: 100px;
-    background: #000;
-    position: relative;
-    margin: 50px;
-
-    &::after {
-        content: "";
-        border-bottom: 50px solid black;
-        border-left: 50px solid  rgba(255, 255, 255, 0);
-        border-right: 50px solid black transparent;
-        border-top: 50px solid black;
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        top: 0px;
-        left: -50px;
-    }
-
-    &::before {
-        content: "";
-        border-bottom: 50px solid  black;
-        border-left: 50px solid  black transparent;
-        border-right: 50px solid rgba(255, 255, 255, 0);
-        border-top: 50px solid black;
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        top: 0px;
-        left: 100%;    
-    }
-}
-
-// ***************** right **********************/
-.right {
-    width: 400px;
-    height: 100px;
-    background: #d9bf8f; 
-    position: relative;
-    margin: 50px 20px;
-
-    &::before {
-        content: "";
-        border-bottom: 50px solid rgba(255, 255, 255, 0);
-        border-right: 50px solid #d9bf8f;
-        border-left: 50px solid rgba(255, 255, 255, 0);
-        border-top: 50px solid rgba(255, 255, 255, 0);
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        top: 0px;
-        left: -100px;       
-    }
-}
-//*********************/
-
-//************** text for support ***********/
 .supp {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -435,10 +316,6 @@ select {
 
 .ll {
     padding-left: 45px;
-}
-
-.cc {
-    margin: 0px;
 }
 
 .rr {
@@ -461,77 +338,7 @@ select {
     color: #fff;
 }
 
-//<!--  ----- form for JS -----  -->
-.sign-in {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 375px;
-    height: 260px;
-    background: #fff;
-    color: red;
-    font-size: 14px;
-    flex-direction: column;
-    top: 220px;
-    left: 525px;
-    opacity: 0;
-}
-
-.sign {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 800;
-    color: #f09d66;
-    font-family: 'Lato', sans-serif;
-    
-}
-
-.sign-in input {
-    background: #ebebeb;
-    color: #999;
-    border: 1px solid #ebebeb;
-    margin: 20px 30px 0;
-    font-style: italic;
-    border-left: 6px solid  #f09d66;
-    padding-left: 10px;
-    line-height: 37px;
-    font-size: 14px;
-}
-
-.botton input {
-    width: 77px;
-    height: 30px;
-    background:  #f09d66;
-    margin-left: 266px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 12px;
-    font-style: normal;
-    font-family: 'Lato', sans-serif;
-    font-weight: 800;
-} 
-
-.botton p {
-    margin: 0 auto;
-}
-
-.keep {
-    color: #ebebeb;
-    font-style: italic;
-}
-
-.keep i {
-    color: #999;
-    background:#ebebeb;
-}
-
-.sign-in p {
-    margin: 0px 30px;
-}
-//********************************/
-
-// <!-- summer collection -->  
+/* <!-- summer collection -->   */
 .bej-romb {
     display: flex;
     justify-content: center;
@@ -549,7 +356,7 @@ select {
     font-family:Playfair Display, serif;
     font-size: 30px;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .title p {
@@ -562,7 +369,7 @@ hr {
     size: 1px;
 }
 
-// --------Add to card------------------ */
+/* --------Add to card------------------ */
 .colection {
     border: 1px solid #d7d7d7;
     margin: 0 auto;
@@ -573,10 +380,9 @@ hr {
     align-items: center;
     flex-wrap: wrap;
     padding: 16px;
-    margin-bottom: 45px;
+    margin-bottom: 95px;
 }
-
-//************** photo - hover ***************/
+/* ************* photo - hover ************** */
 .photo {
     display: block;
     position: relative;
@@ -584,6 +390,7 @@ hr {
 
 .photo:hover .photo-shadow:hover {
     opacity: 0.4;
+ 
 }
 
 .photo:hover .card {
@@ -637,22 +444,8 @@ hr {
     transform: translate(-50%);
     bottom: 14px;
 }
-
-//<!-- romb for photo-collection -->
-.rombss-photo {
-    display: flex;
-    justify-content: center;
-}
-
-.rombsis {
-    display: flex;
-    justify-content: space-between;
-    width: 75px;
-    margin: 0px 0px 30px;
-}
 /* ********************************* */
 
-// -----------animation----------/
 .cicle {
     position: absolute;
     width: 60px;
@@ -663,21 +456,6 @@ hr {
     top: 17px;
 }
 
-// ********анимация на  желтый кружочек*******
-@keyframes ccicle {
-    from {background: #feab12;}
-    to {background: red}
-}
-
-.photo:hover .cicle {
-    animation-name: ccicle;
-    animation-duration: 1s;
-    animation-iteration-count: 6;
-    animation-direction: alternate;  
-}
-//*************************
-
-//  -----------text on yellow cicle-------/
 .pro {
     color: #fff;
     font-family: 'Lato', sans-serif;
@@ -703,6 +481,7 @@ hr {
     background: #141414;
 }
 
+
 .footer { 
     padding: 68px 0 120px ;  
     width: 1290px;
@@ -710,6 +489,7 @@ hr {
     justify-content: space-around;
     margin: 0 auto;
 }
+
 
 .footer span {
     text-transform: uppercase; 
@@ -723,10 +503,8 @@ hr {
 .footer li {
     margin-bottom: 16px;
 }
-
 .footer a, p {
     color:#737373;
-    text-decoration: none;
 }
 
 .footer p {
@@ -760,31 +538,24 @@ hr {
     color: #000;
 }
 
-/************ hover **********************/
+/* hover */
 .footer-social-menu li:hover {
     background: #323030;
  }
- .footer-social-menu li:hover a {
+ .footer-social-menu a:hover {
     color: #fff;
  }
  
- /************ active *********************/
- .footer-social-menu li:active a {
+ /* active */
+ .footer-social-menu a:active {
     color: #7b7671;
  }
  .footer-social-menu li:active {
     background: #f0975c;
  }
- //********************************/
 
- //<!------- footer-down --------->
 form {
     margin-top: 53px;
-}
-
-.field {
-    border: 2px solid #323030; 
-    width: 360px;
 }
 
 .enter {
@@ -827,7 +598,7 @@ form {
 }
 
 .button {
-    padding-right: 50px;
+    right: 20px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -841,7 +612,6 @@ form {
     background: #000;
     border: 1px solid #000;
     font-size: 30px;
-    font-weight: 900;
 }
 
 .down-cards {

@@ -1,11 +1,10 @@
 @charset "UTF-8";
-body {
+.bbody {
   width: 1440px;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
 }
 
-/* -------header-top------- */
 .header-top {
   background: #f2f2f2;
   height: 38px;
@@ -50,6 +49,11 @@ body {
   border-right: 1px solid #000;
 }
 
+.top-menu a:hover {
+  contain: "";
+  border-bottom: 1px solid #000;
+}
+
 .top-menu li:last-child {
   border-right: none;
 }
@@ -60,7 +64,10 @@ body {
   text-transform: uppercase;
 }
 
-/* ---------header-bottom--------- */
+.mobile {
+  display: none;
+}
+
 .header-bottom {
   height: 128px;
   background: #fff;
@@ -83,6 +90,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 295px;
 }
 
@@ -95,6 +105,11 @@ body {
   font-family: Playfair Display, serif;
   text-decoration: none;
   color: #000;
+}
+
+.bottom-menu a:hover {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
 }
 
 @font-face {
@@ -170,6 +185,7 @@ body {
   color: #000;
 }
 
+/*****************************/
 option {
   width: 115px;
   text-transform: uppercase;
@@ -188,15 +204,22 @@ select {
   text-transform: uppercase;
 }
 
-/* ----------sale-2-girls  -- */
-.girls {
-  position: relative;
-  background: url(../img/2girls.jpg);
+.main-girls {
+  background: url(../img/2girls2.jpg);
   background-repeat: no-repeat;
+  background-position-x: 50%;
   height: 692px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+}
+
+.girls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -217,7 +240,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* !!! в макете 257рх, но визуально бОльше, заменила на 200рх */
+  /* !!! в макете 257рх, но визуально бОльше за счет паддинга, заменила на 200рх */
   height: 200px;
   width: 200px;
   border: 5px double #fff;
@@ -283,17 +306,18 @@ select {
   font-size: 24px;
   font-family: 'Lato', sans-serif;
   margin-top: 50px;
-  border: 1px solid #f09d66;
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 
+/************* hover ******************/
 .SHOP_NOW input:hover {
   background: #d9bf8f;
-  border: 1px solid #d9bf8f;
   color: #737373;
   font-weight: 900;
 }
 
-/*  <!-- pomb --> */
+/*******************************/
 .rombss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,6 +326,7 @@ select {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 75px;
+  margin: 80px 0px 75px;
 }
 
 .romb {
@@ -311,7 +336,6 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80px;
   width: 15px;
   height: 15px;
   background: #b2b2b2;
@@ -323,22 +347,27 @@ select {
   background: #000;
 }
 
-/****** --слайдер"<" и ">"------ ******/
+/*******************************/
 .arrow-left {
   position: absolute;
   top: 283px;
-  left: 45px;
+  left: -30px;
   height: 52px;
 }
 
 .arrow-right {
   position: absolute;
   top: 283px;
-  right: 45px;
+  right: -30px;
   height: 52px;
 }
 
-/* <!-- ------support-------- --> */
+.arrow-right a, .arrow-left a {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+}
+
 .support {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,13 +379,10 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100px;
-  width: 1290px;
   margin: 0 auto;
-  background: url(../img/support.png);
   color: #fff;
-  margin-top: 66px;
-  margin-bottom: 95px;
+  margin-bottom: 45px;
+  margin-top: 16px;
 }
 
 .suppo-wrapper {
@@ -368,13 +394,103 @@ select {
           justify-content: space-between;
 }
 
+.general {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left {
+  width: 400px;
+  height: 100px;
+  background: #d9bf8f;
+  position: relative;
+  margin: 50px 20px;
+}
+
+.left::before {
+  content: "";
+  border-bottom: 50px solid rgba(255, 255, 255, 0);
+  border-left: 50px solid  #d9bf8f;
+  border-right: 50px solid rgba(255, 255, 255, 0);
+  border-top: 50px solid rgba(255, 255, 255, 0);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+}
+
+.center {
+  display: none;
+}
+
+.center-black {
+  width: 450px;
+  height: 100px;
+  background: #000;
+  position: relative;
+  margin: 50px;
+}
+
+.center-black::after {
+  content: "";
+  border-bottom: 50px solid black;
+  border-left: 50px solid rgba(255, 255, 255, 0);
+  border-right: 50px solid black transparent;
+  border-top: 50px solid black;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: -50px;
+}
+
+.center-black::before {
+  content: "";
+  border-bottom: 50px solid  black;
+  border-left: 50px solid  black transparent;
+  border-right: 50px solid rgba(255, 255, 255, 0);
+  border-top: 50px solid black;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+}
+
+.right {
+  width: 400px;
+  height: 100px;
+  background: #d9bf8f;
+  position: relative;
+  margin: 50px 20px;
+}
+
+.right::before {
+  content: "";
+  border-bottom: 50px solid rgba(255, 255, 255, 0);
+  border-right: 50px solid #d9bf8f;
+  border-left: 50px solid rgba(255, 255, 255, 0);
+  border-top: 50px solid rgba(255, 255, 255, 0);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+}
+
 .supp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -388,6 +504,10 @@ select {
 
 .ll {
   padding-left: 45px;
+}
+
+.cc {
+  margin: 0px;
 }
 
 .rr {
@@ -410,7 +530,80 @@ select {
   color: #fff;
 }
 
-/* <!-- summer collection -->   */
+.sign-in {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 375px;
+  height: 260px;
+  background: #fff;
+  color: red;
+  font-size: 14px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 220px;
+  left: 525px;
+  opacity: 0;
+}
+
+.sign {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 800;
+  color: #f09d66;
+  font-family: 'Lato', sans-serif;
+}
+
+.sign-in input {
+  background: #ebebeb;
+  color: #999;
+  border: 1px solid #ebebeb;
+  margin: 20px 30px 0;
+  font-style: italic;
+  border-left: 6px solid  #f09d66;
+  padding-left: 10px;
+  line-height: 37px;
+  font-size: 14px;
+}
+
+.botton input {
+  width: 77px;
+  height: 30px;
+  background: #f09d66;
+  margin-left: 266px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-style: normal;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+}
+
+.botton p {
+  margin: 0 auto;
+}
+
+.keep {
+  color: #ebebeb;
+  font-style: italic;
+}
+
+.keep i {
+  color: #999;
+  background: #ebebeb;
+}
+
+.sign-in p {
+  margin: 0px 30px;
+}
+
 .bej-romb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,7 +632,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .title p {
@@ -452,7 +645,6 @@ hr {
   size: 1px;
 }
 
-/* --------Add to card------------------ */
 .colection {
   border: 1px solid #d7d7d7;
   margin: 0 auto;
@@ -469,10 +661,9 @@ hr {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 16px;
-  margin-bottom: 95px;
+  margin-bottom: 45px;
 }
 
-/* ************* photo - hover ************** */
 .photo {
   display: block;
   position: relative;
@@ -537,6 +728,26 @@ hr {
   bottom: 14px;
 }
 
+.rombss-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rombsis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75px;
+  margin: 0px 0px 30px;
+}
+
 /* ********************************* */
 .cicle {
   position: absolute;
@@ -546,6 +757,35 @@ hr {
   background: #feab12;
   left: 16px;
   top: 17px;
+}
+
+@-webkit-keyframes ccicle {
+  from {
+    background: #feab12;
+  }
+  to {
+    background: red;
+  }
+}
+
+@keyframes ccicle {
+  from {
+    background: #feab12;
+  }
+  to {
+    background: red;
+  }
+}
+
+.photo:hover .cicle {
+  -webkit-animation-name: ccicle;
+          animation-name: ccicle;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 6;
+          animation-iteration-count: 6;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .pro {
@@ -599,6 +839,7 @@ hr {
 
 .footer a, p {
   color: #737373;
+  text-decoration: none;
 }
 
 .footer p {
@@ -658,6 +899,11 @@ form {
   margin-top: 53px;
 }
 
+.field {
+  border: 2px solid #323030;
+  width: 360px;
+}
+
 .enter {
   color: #737373;
   font-family: 'Lato', sans-serif;
@@ -705,7 +951,7 @@ form {
 }
 
 .button {
-  right: 20px;
+  padding-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,6 +972,7 @@ form {
   background: #000;
   border: 1px solid #000;
   font-size: 30px;
+  font-weight: 900;
 }
 
 .down-cards {
