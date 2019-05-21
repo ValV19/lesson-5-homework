@@ -87,11 +87,24 @@
         padding-left: 15px;
     }
 
+    // <!-- summer collection --> 
     hr {
-        width: 200px;
+        width: 160px;
     }
 
-    // <!-- summer collection -->  
+    .bej-romb {
+        margin: 0px 25px;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        font-family:Playfair Display, serif;
+        font-size: 30px;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
     .colection {
         overflow: hidden;
         height: 703px;

@@ -21,25 +21,12 @@
     }
 
     /* ---------header-bottom--------- */
-    .bottom-menu {
-        width: 285px;
+    .bottom-menu, option, select {
+        display: none;
     }
 
-    .bottom-menu li {
-        padding: 0 6px;
-    }
-    
-    .bottom-menu li {
-        padding: 0 6px;
-    }
-
-    .bottom-menu a {
-        font-size: 16px;
-    }
-
-    .social-menu {
-        width: 115px;
-        padding-left: 10px;
+    .header-bottom {
+        height: 100px;
     }
 
     .social-menu a:only-of-type {
@@ -48,14 +35,6 @@
 
     .social-menu li {
         border: none;
-    }
-
-    option {
-        width: 110px;
-    }
-    
-    select {
-       width: 110px;
     }
 
     //<!-- ----sale-2-girls-----  -->
@@ -67,13 +46,59 @@
 
     .sale {
        margin-top: 170px;
+       height: 170px;
+       width: 170px;
+       padding: 30px;
+    }
+
+    .s1 {
+        font-size: 18px;
+    }
+    
+    .s2 {
+        font-size: 56px;
+    }
+    
+    .s3 {
+        font-size: 18px;
+    }
+    
+    .s4 {
+        font-size: 18px;
+    }
+
+
+    .sale img {
+        width: 194px;
+        bottom: 72px;
+    }
+
+    .SHOP_NOW input {
+        height: 48px;
+        width: 170px;
+        font-size: 20px;
+        margin-top: 44px;       
     }
 
     .rombss {
-       margin: 80px 0px 45px;
+        margin: 60px 0px 45px;
+    }
+
+    .arrow-left {
+        top: 283px;
+        left: 0px;
+    }
+    
+    .arrow-right {
+        top: 283px;
+        right: 0px;
     }
 
     //* <!-- ------support-------- --> */
+    .support {
+        margin: 16px 0px 45px;
+    }
+
     .general {
         flex-direction: column;
         align-items: center;
@@ -203,6 +228,6 @@
     }
 
     .button {
-        padding-right: 30px;
+        margin-right: 30px;
     }
 }

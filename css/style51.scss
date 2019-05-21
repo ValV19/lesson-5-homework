@@ -1,6 +1,7 @@
 .bbody {
     width: 1440px;
     margin: 0 auto;
+    padding: 0;
     font-family: 'Lato', sans-serif;
 }
 
@@ -205,7 +206,7 @@ select {
     height: 200px;
     width: 200px;
     border: 5px double #fff;
-    padding: 34px;
+    padding: 28px;
     margin-top: 140px;
     justify-content: space-between;
     align-items: center;
@@ -320,8 +321,7 @@ select {
     // width: 1290px;
     margin: 0 auto;
     color: #fff;
-    margin-bottom: 45px;
-    margin-top: 16px;
+    margin: 16px 0px;
 }
 
 .suppo-wrapper {
@@ -557,7 +557,7 @@ select {
 }
 
 hr {
-    width: 490px;
+    width: 400px;
     color: #d7d7d7;
     size: 1px;
 }
@@ -701,6 +701,8 @@ hr {
 /* <!------- footer ---------> */
 .black-footer {
     background: #141414;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .footer { 
@@ -827,21 +829,20 @@ form {
 }
 
 .button {
-    padding-right: 50px;
+    margin-right: 50px;
+    margin-left: auto;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 30px;
-}
-/* ???????как поставить font-awecome?????? */
-.button input {
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    color: #fff;
     background: #000;
-    border: 1px solid #000;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
     font-size: 30px;
-    font-weight: 900;
 }
 
 .down-cards {
