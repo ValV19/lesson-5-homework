@@ -1,0 +1,602 @@
+// *********** 1290px **************
+@media (max-width: 1440px) {
+
+    .wrapper {
+        width: 1024px;
+    }
+
+    .top-menu li {
+        padding: 0 25px;
+    }
+
+    .bottom-menu li {
+        padding: 0 8px;
+    }
+
+    .social-menu {
+        width: 300px;
+        padding-left: 90px;
+    }
+
+
+    .main-girls {
+        height: 100%;
+        width: 100%;
+    }
+
+    .text-up {
+        margin-bottom: 8px;
+    }
+
+    hr {
+        width: 250px;
+    }
+
+    .colection {
+        overflow: hidden;
+        height: 702px;
+        padding-bottom: 37px;
+        margin-bottom: 30px;
+    }
+
+    .footer, .footer-down {
+        width: 1024px;
+    }
+}
+
+// *********** 960px **************
+@media (max-width: 960px) {
+    //<!-- -----header-top----- -->
+    .wrapper {
+        width: 728px;
+    }
+
+    .top-menu li {
+        padding: 0 12px;
+    }
+
+    .phone a {
+        font-size: 13px;
+    }
+
+    .header-bottom {
+        height: 175px;
+        align-items: flex-start
+    }
+
+    //<!-- ----- header-bottom ----- -->
+    .bar-bottom {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .bottom-menu li {
+        padding: 0 9px;
+    }
+
+    .logo {
+        bottom: 25%;
+    }
+
+    .social-menu {
+        width: 300px;
+        padding-left: 90px;
+    }
+
+   //<!-- ----sale-2-girls-----  -->
+    .main-girls {
+        background-position-x: 50%;
+    }
+
+    /* <!-- ------support-------- --> */
+    .left {
+        width: 180px;
+        margin: 50px 10px;
+    }
+
+    .center-black {
+        width: 300px;
+    }
+
+    .right {
+        width: 180px;
+        margin: 50px 10px;
+    }
+
+    .supp img {
+        margin: 31px 16px 31px 0px;
+    }
+
+    .supp {
+        justify-content: space-between;
+    }
+
+    .text-up {
+        font-size: 24px;
+    }
+   
+    .ll {
+        padding-left: 5px;
+    }
+    
+    .rr {
+        padding-right: 15px;
+    }
+
+    .cc {
+        padding-left: 15px;
+    }
+
+    // <!-- summer collection --> 
+    hr {
+        width: 160px;
+    }
+
+    .bej-romb {
+        margin: 0px 25px;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        font-family:Playfair Display, serif;
+        font-size: 30px;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .colection {
+        overflow: hidden;
+        height: 722px;
+        padding-bottom: 37px;
+        margin-bottom: 30px;
+    }
+
+    .photo {
+        margin-bottom: 20px;
+    }
+
+    /* <!------- footer ---------> */
+    .footer { 
+        padding: 68px 0 90px;  
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .footer, .footer-down { 
+        width: 728px;
+    }
+
+    .stay {
+        margin: 50px 40px 0px;
+    }
+
+    .down-cards {
+        padding: 0px 0px 80px 65px;
+    }
+}
+
+// *********** 768px **************
+@media (max-width: 768px) {
+
+    .wrapper {
+        width: 420px;
+        // overflow: visible;
+    }
+
+    .top-menu {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        padding: 0 12px;
+    }
+
+    /* ---------header-bottom--------- */
+    .bottom-menu, option, select {
+        display: none;
+    }
+
+    .header-bottom {
+        height: 100px;
+    }
+
+    .social-menu a:only-of-type {
+        display: none;
+    }
+
+    .social-menu li {
+        border: none;
+    }
+
+    //<!-- ----sale-2-girls-----  -->
+    .main-girls {
+        background: url(../img/2girls3.jpg);
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+    }
+
+    .sale {
+       margin-top: 170px;
+       height: 170px;
+       width: 170px;
+       padding: 30px;
+    }
+
+    .s-one {
+        font-size: 18px;
+    }
+    
+    .s-two {
+        font-size: 56px;
+    }
+    
+    .ss-three {
+        font-size: 18px;
+    }
+    
+    .s-four {
+        font-size: 18px;
+    }
+
+    .sale img {
+        width: 194px;
+        bottom: 72px;
+    }
+
+    .SHOP_NOW input {
+        height: 48px;
+        width: 170px;
+        font-size: 20px;
+        margin-top: 44px;       
+    }
+
+    .rombss {
+        margin: 60px 0px 45px;
+    }
+
+    .arrow-left {
+        top: 283px;
+        left: 0px;
+    }
+    
+    .arrow-right {
+        top: 283px;
+        right: 0px;
+    }
+
+    //* <!-- ------support-------- --> */
+    .support {
+        margin: 16px 0px 45px;
+    }
+
+    .general {
+        flex-direction: column;
+        align-items: center;
+        height: 360px;
+        width: 400px;
+        position: relative;
+        padding: 0px 10px 24px;
+    }
+
+    .supp {
+        align-items: center;
+        }    
+
+    .ll {
+        padding-left: 0px;
+    }
+    
+    .rr {
+        padding-right: 0px;
+    }
+    
+    .text-up {
+        margin: 20px 0px 15px;
+        font-size: 24px;
+    }
+        
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .center-black {
+        display: none;
+    }
+        
+    .left, .center, .right {
+        position: absolute;
+    }
+
+    .left {
+        background:#d9bf8f;
+        z-index: 3;
+    }
+
+    .center {
+        background: #000;
+        z-index: 2;
+    }
+    
+    .right {
+        background: #d9bf8f;
+        z-index: 1;
+    }
+
+    .left, .center, .right {
+        margin: 10px 0; 
+        width: 400px; 
+        height: 100px;
+        position: relative;
+    }
+        
+    .left:before, .left:after,
+    .center:before, .center:after, 
+    .right:before, .right:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: 0;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+    }
+
+    .left:before,
+    .center:after,
+    .right:before {
+        top: -1px;
+        border-top: 30px solid#fff;
+    }
+
+    .left:after,
+    .right:after {
+        bottom: -30px;
+        border-top: 30px solid#d9bf8f;
+    }
+
+    .center::before {
+        bottom: -59px;
+        border-top: 30px solid black;
+        border-bottom: 30px solid transparent;
+    }
+          
+    .supp {
+        justify-content: center;
+    }
+
+    hr {
+        width: 0px;
+    }
+
+    .title p {
+        font-size: 26px;
+    }
+
+     /* <!------- footer ---------> */
+     .footer { 
+        padding: 25px 0px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    .shops {
+        margin: 25px;
+    }
+
+    .stay {
+        margin: 15px 25px 0px;
+    }
+
+    .footer, .footer-down { 
+        width: 420px;
+    }
+
+    .All-Rights {
+        padding-left: 40px;
+    }
+
+    .down-cards {
+        padding: 0px 0px 40px 40px;
+    }
+
+    .button {
+        margin-right: 30px;
+    }
+}
+
+// *********** 480px **************
+@media (max-width: 480px) {
+
+    .wrapper {
+        width: 280px;
+    }
+
+    .bar {
+        padding: 10px 0px;
+    }
+
+    a.phone {
+        font-size: 14px;
+    }
+
+    .bottom-menu li {
+        padding: 0 3px;
+    }
+
+    .social-menu {
+        width: 66px;
+        padding-left: 0px;
+    }
+
+    .bottom-menu a {
+        font-size: 14px;
+    }
+
+    select {
+        width: 49px;
+        padding: 8px 0px;
+    }
+
+    option {
+        width: 75px;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .logo {
+       font-size: 60px;
+    }
+
+    //<!-- ----sale-2-girls-----  -->
+    .main-girls {
+        background: url(../img/2girls4.jpg);
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+    }
+
+    .sale {
+        height: 130px;
+        width: 130px;
+        padding: 10px 16px;
+        margin-top: 96px;
+    }
+
+    .s-one {
+        font-size: 16px;
+    }
+    
+    .s-two {
+        font-size: 46px;
+    }
+    
+    .s-three {
+        font-size: 16px;
+    }
+    
+    .s-four {
+        font-size: 16px;
+    }
+
+    .sale img {
+        width: 146px;
+        bottom: 42px;
+    }
+
+    .SHOP_NOW input {
+        height: 40px;
+        width: 150px;
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    .rombss {
+        margin: 21px 0px;
+    }
+
+    .arrow-left,  .arrow-right {
+        top: 190px;
+   }
+
+    .arrow-left a,  .arrow-right a {
+        font-size: 35px;
+    }
+
+    /* <!-- ------support-------- --> */
+     .general {
+        width: 280px;
+        padding: 0px 0px 20px;
+    }
+
+    .left, .center, .right {
+        width: 280px; 
+    }
+        
+    .left:before, .left:after,
+    .center:before, .center:after, 
+    .right:before, .right:after {
+        border-left: 140px solid transparent;
+        border-right: 140px solid transparent;
+    }
+
+    .text-up  {
+        font-size: 20px;
+    }
+
+    // **********************
+    .title p {
+        font-size: 22px;
+    }
+
+    .bej-romb {
+       margin: 0px 15px;
+    }
+
+    /* <!------- footer ---------> */  
+    .footer, .footer-down { 
+        width: 280px;
+    }
+
+    .footer ul {
+        margin-top: 30px;
+    }
+
+    .shops {
+        margin: 25px 25px 0px;
+    }
+
+    .stay {
+        margin: 15px 0px 0px;
+    }   
+    
+    .stay span,  .stay p {
+        margin-left: 25px;
+    }
+
+    .footer-social-menu {
+        width: 260px;
+        padding: 0px 10px;
+    }
+
+    .footer-social-menu li {
+        line-height: 45px;
+        width: 45px;
+    }
+
+    .footer-down { 
+        padding: 20 0 120px;
+    }
+
+    .sub {
+        width: 80px;
+        font-size: 11px;
+    }
+
+    .field {
+        width: 275px;
+    }
+
+    .enter {
+        width: 169px;
+    }
+
+    .All-Rights {
+        padding-left: 20px;
+    }
+
+    .down-cards {
+        padding: 0px 0px 40px 20px;
+    }
+
+    .button {
+        margin-right: 20px;
+    }
+}
+

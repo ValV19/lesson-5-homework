@@ -1,0 +1,883 @@
+.bbody {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-position-x: 50%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+//<!-- -----header-top----- -->
+.header-top {
+    background:  #f2f2f2;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    width: 1290px;
+    margin: 0 auto;
+    background-position-x: 50%;
+    background-position: center;
+    background-size: cover;
+    // overflow: hidden;
+} 
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.phone {
+    text-decoration: none;
+    color: #000;
+}
+
+.phone i {
+    padding: 0 10px;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.top-menu li {
+    padding: 0 30px;
+    border-right: 1px solid #000;
+}
+
+.top-menu a:hover {
+    contain: "";
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.top-menu li:last-child {
+    border-right: none;
+} 
+
+.top-menu a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.mobile {
+    display: none;
+}
+
+//<!-- -------header-bottom------- -->
+.header-bottom {
+    height: 128px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 295px;
+}
+
+.bottom-menu li {
+    padding: 0 13px;
+}
+
+.bottom-menu a {
+    font-size: 18px;
+    font-family:Playfair Display, serif;
+    text-decoration: none;
+    color: #000;
+}
+
+.bottom-menu a:hover {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    cursor: pointer;
+}
+
+@font-face {
+    /* подключаем шрифт из папки проекта */
+    font-family: KrinkesDecorPERSONAL;
+    src: url(../fonts/KrinkesDecorPERSONAL.ttf)
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 72px;
+    text-decoration: none;
+    color: #000;
+    font-family: KrinkesDecorPERSONAL;
+}
+
+.social-menu {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+}
+
+.social-menu li {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    /* кружочки */
+    line-height: 30px;
+    width: 30px;
+    border: 2px solid #d9bf8f;
+    border-radius: 50%;
+}
+
+.social-menu li:last-child {
+    /* выпадающее меню без кружочка */
+    border: none;
+    /* поставить список на место, без сдвига вправо */
+    width: 115px;
+}
+
+.social-menu a {
+    color: #d9bf8f;
+}
+
+/************* hover ******************/
+.social-menu li:hover {
+   background: #f0975c;
+   cursor: pointer;
+}
+
+.social-menu li:last-child:hover {
+    background: none;
+}
+
+.social-menu li:hover a {
+    color: #7b7671;
+    cursor: pointer;
+}
+
+/**************** active *************/ 
+.social-menu li:active {
+    background: #7b7671;
+    cursor: pointer;
+}
+
+.social-menu li:active a {
+    color: #000;
+    cursor: pointer;
+}
+/*****************************/ 
+
+option {
+    width: 115px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #242424;
+    color: #fff;
+    padding: 8px 0px 8px 30px;
+}
+
+select {
+    background-color: #000;
+    color: #fff;
+    width: 115px;
+    padding: 8px 0px 8px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+//<!-- ----sale-2-girls-----  -->
+.main-girls {
+    display: flex;
+    margin: 0 auto;
+    background: url(../img/2girls2.jpg);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 692px;
+    background-position-x: 50%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.girls {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale {
+    display: flex;
+    flex-direction: column;
+    /* !!! в макете 257рх, но визуально бОльше за счет паддинга, заменила на 200рх */
+    height: 200px;
+    width: 200px;
+    border: 5px double #fff;
+    padding: 28px;
+    margin-top: 140px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.s-one {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.s-two {
+    font-size: 59px;
+    color: #000;
+    font-weight: 700;
+}
+
+.s-three {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.s-four {
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+}
+
+.sale img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 204px;
+    bottom: 85px;
+}
+
+.SHOP_NOW input {
+    display: flex;
+    height: 54px;
+    width: 190px;
+    background: #f09d66;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 50px;
+    transition: color 1s;
+}
+
+/************* hover ******************/
+.SHOP_NOW input:hover {
+    background: #d9bf8f;
+    color: #737373;
+    font-weight: 900;
+    cursor: pointer;
+}
+/*******************************/
+
+
+//<!-- ------pomb on 2girls----- -->
+.rombss {
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+    margin: 80px 0px 75px;
+}
+          
+.romb {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background: #b2b2b2;
+    transform: rotate(45deg);
+}
+
+.romb:hover {
+    background: #000;
+    cursor: pointer;
+}
+/*******************************/
+
+//<!-- -----slider------- -->
+.arrow-left {
+    position: absolute;
+    top: 283px;
+    left: -30px;
+    height: 52px; 
+}
+
+.arrow-right {
+    position: absolute;
+    top: 283px;
+    right: -30px;
+    height: 52px;
+}
+
+.arrow-right a, .arrow-left a {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+//<!-- ------support-------- -->
+.support {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 1290px;
+    margin: 0 auto;
+    color: #fff;
+    margin: 16px 0px;
+}
+
+.suppo-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ******** fon for support *********/ 
+.general {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+// ************** left *****/
+.left {
+    width: 400px;
+    height: 100px;
+    background: #d9bf8f;
+    position: relative;
+    margin: 50px 20px;
+
+    &::before {
+        content: "";
+        border-bottom: 50px solid rgba(255, 255, 255, 0);
+        border-left: 50px solid  #d9bf8f;
+        border-right: 50px solid rgba(255, 255, 255, 0);
+        border-top: 50px solid rgba(255, 255, 255, 0);
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 0px;
+        left: 100%;
+    }
+}
+
+// *************** center ******************/
+.center {
+    display: none;
+}
+
+.center-black {
+    width: 450px;
+    height: 100px;
+    background: #000;
+    position: relative;
+    margin: 50px;
+
+    &::after {
+        content: "";
+        border-bottom: 50px solid black;
+        border-left: 50px solid  rgba(255, 255, 255, 0);
+        border-right: 50px solid black transparent;
+        border-top: 50px solid black;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 0px;
+        left: -50px;
+    }
+
+    &::before {
+        content: "";
+        border-bottom: 50px solid  black;
+        border-left: 50px solid  black transparent;
+        border-right: 50px solid rgba(255, 255, 255, 0);
+        border-top: 50px solid black;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 0px;
+        left: 100%;    
+    }
+}
+
+// ***************** right **********************/
+.right {
+    width: 400px;
+    height: 100px;
+    background: #d9bf8f; 
+    position: relative;
+    margin: 50px 20px;
+
+    &::before {
+        content: "";
+        border-bottom: 50px solid rgba(255, 255, 255, 0);
+        border-right: 50px solid #d9bf8f;
+        border-left: 50px solid rgba(255, 255, 255, 0);
+        border-top: 50px solid rgba(255, 255, 255, 0);
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 0px;
+        left: -100px;       
+    }
+}
+//*********************/
+
+//************** text for support ***********/
+.supp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.supp img {
+    width: 48px;
+    height: 48px;
+    margin: 31px 27px 31px 0px;
+}
+
+.ll {
+    padding-left: 45px;
+}
+
+.cc {
+    margin: 0px;
+}
+
+.rr {
+    padding-right: 55px;
+}
+
+.text-up {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.text-down {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+//<!--  ----- form for JS -----  -->
+.sign-in {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    height: 260px;
+    background: #fff;
+    color: red;
+    font-size: 14px;
+    flex-direction: column;
+    top: 220px;
+    left: 525px;
+    opacity: 0;
+}
+
+.sign {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    color: #f09d66;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.sign-in input {
+    background: #ebebeb;
+    color: #999;
+    border: 1px solid #ebebeb;
+    margin: 20px 30px 0;
+    font-style: italic;
+    border-left: 6px solid  #f09d66;
+    padding-left: 10px;
+    line-height: 37px;
+    font-size: 14px;
+}
+
+.botton input {
+    width: 77px;
+    height: 30px;
+    background:  #f09d66;
+    margin-left: 266px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+} 
+
+.botton p {
+    margin: 0 auto;
+}
+
+.keep {
+    color: #ebebeb;
+    font-style: italic;
+}
+
+.keep i {
+    color: #999;
+    background:#ebebeb;
+}
+
+.sign-in p {
+    margin: 0px 30px;
+}
+//********************************/
+
+// <!-- summer collection -->  
+.bej-romb {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    width: 15px;
+    height: 15px;
+    background: #d9bf8f;
+    transform: rotate(45deg);
+    margin: 0px 45px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family:Playfair Display, serif;
+    font-size: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.title p {
+    color: #000;
+}
+
+hr {
+    width: 400px;
+    color: #d7d7d7;
+    size: 1px;
+}
+
+// --------Add to card------------------ */
+.colection {
+    border: 1px solid #d7d7d7;
+    margin: 0 auto;
+    height: 732px;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    margin-bottom: 45px;
+}
+
+//************** photo - hover ***************/
+.photo {
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.photo:hover .photo-shadow:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.photo:hover .card {
+    border-bottom: 44px solid #f0975c;
+    cursor: pointer;
+}
+
+.photo:hover .heart {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.photo-shadow {
+    width: 300px;
+    height: 348px;
+    background: #000;
+    z-index: auto;
+    bottom: 21px;
+    position: absolute;
+    opacity: 0;
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    /* трапеция */
+    border-bottom: 44px solid #000;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 130px;
+    bottom: 21px;
+}
+
+.heart {
+    position: absolute;
+    background: url(../img/white-heart.png);
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 147px;
+    opacity: 0;
+}
+
+.photo p {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 34px;
+}
+
+//<!-- romb for photo-collection -->
+.rombss-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.rombsis {
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+    margin: 0px 0px 30px;
+}
+/* ********************************* */
+
+// -----------animation----------/
+.cicle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #feab12;
+    left: 16px;
+    top: 17px;
+}
+
+// ********анимация на  желтый кружочек*******
+@keyframes ccicle {
+    from {background: #feab12;}
+    to {background: red}
+}
+
+.photo:hover .cicle {
+    animation-name: ccicle;
+    animation-duration: 1s;
+    animation-iteration-count: 6;
+    animation-direction: alternate;  
+}
+//*************************
+
+//  -----------text on yellow cicle-------/
+.pro {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    font-size: 22px;
+    left: 29px;
+    top: 36px;
+}
+
+.procent {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    font-size: 11px;
+    left: 59px;
+    top: 42px;
+}
+
+/* <!------- footer ---------> */
+.black-footer {
+    background: #141414;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer { 
+    padding: 68px 0 120px ;  
+    width: 1290px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.footer span {
+    text-transform: uppercase; 
+    color: #fff;
+}
+
+.footer ul {
+    margin-top: 54px;
+}
+
+.footer li {
+    margin-bottom: 16px;
+}
+
+.footer a, p {
+    color:#737373;
+    text-decoration: none;
+}
+
+.footer p {
+    margin-top: 54px;
+}
+
+.footer-social-menu {
+    /* строка для кружочков */
+    width: 316px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-menu li {
+    /* кружочки */
+    line-height: 50px;
+    width: 50px;
+    font-size: 24px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.footer-social-menu li {
+    /* строка для иконок */
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-social-menu a {
+    /* цвет иконок */
+    color: #000;
+}
+
+/************ hover **********************/
+.footer-social-menu li:hover {
+    background: #323030;
+    cursor: pointer;
+ }
+
+ .footer-social-menu li:hover a {
+    color: #fff;
+    cursor: pointer;
+ }
+ 
+ /************ active *********************/
+ .footer-social-menu li:active a {
+    color: #7b7671;
+    cursor: pointer;
+ }
+
+ .footer-social-menu li:active {
+    background: #f0975c;
+    cursor: pointer;
+ }
+ //********************************/
+
+ //<!------- footer-down --------->
+form {
+    margin-top: 53px;
+}
+
+.field {
+    border: 2px solid #323030; 
+    width: 360px;
+}
+
+.enter {
+    color:#737373;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background:#141414;
+    width: 234px;
+    border: #141414;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+.sub {
+    width: 100px;
+    background: #323030;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border: #141414;
+    line-height: 35px;
+}
+
+.footer-down { 
+    padding: 20 0 120px;  
+    width: 1290px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    color:#737373;
+}
+    
+.All-Rights {
+    padding-left: 65px;
+    line-height: 18px;
+    font-size: 11px;
+}
+
+.button {
+    margin-right: 50px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #000;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.down-cards {
+    padding: 0px 0px 120px 65px;
+}
+
