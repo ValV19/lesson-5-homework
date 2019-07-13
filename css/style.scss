@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 50;
 }
 
 .wrapper {
@@ -34,11 +35,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    z-index: 50;
 }
 
 .phone {
     text-decoration: none;
     color: #000;
+
     i {
         padding: 0 10px;
     }
@@ -48,7 +51,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
-    z-index: 50;
+ 
 
     li {
         padding: 0 30px;
@@ -91,7 +94,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 295px;
-    z-index: 50;
+
     li {
         padding: 0 13px;
         &:hover {
@@ -101,12 +104,14 @@ body {
             border-top: 1px solid #000;
         }
     }
+    
     a {
         font-size: 18px;
         font-family: Playfair Display, serif;
         text-decoration: none;
         color: #000;
     }
+
     a:hover {
         cursor: pointer;
     }
@@ -158,7 +163,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 340px;
-    z-index: 50;
+
     li {
         display: inline-block;
         text-align: center;
@@ -169,11 +174,13 @@ body {
         border: 2px solid #d9bf8f;
         border-radius: 50%;
     }
+
     li:last-child {
         /* выпадающее меню без кружочка */
         border: none;
         width: 115px;
     }
+
     a {
         color: #d9bf8f;
     }
@@ -187,10 +194,12 @@ body {
     li:last-child:hover {
     background: none;
     }
+
     li:hover a {
         color: #7b7671;
         cursor: pointer;
     }
+
 }
 
 /**************** active *************/ 
@@ -231,12 +240,13 @@ select {
     background-position-x: 50%;
     overflow: hidden;
     background-position: center;
+    background-size: cover;
 }
 
-// slider
+// slider 
 .slider {
     position: relative;
-    z-index: 0; 
+    z-index: 0;
     overflow-x: hidden;
 }
 
@@ -258,12 +268,13 @@ select {
     left: 50%;
     top: 0%;
     transform: translate(-50%);
-    z-index: 30;  
+    z-index: 30; 
 }
 
 .sale {
     display: flex;
     flex-direction: column;
+    /* !!! в макете 257рх, но визуально бОльше за счет паддинга, заменила на 200рх */
     width: 15vw;
     height: 15vw;
     border: 0.3em double #fff;
@@ -282,7 +293,6 @@ select {
 }
 
 .s-two {
-    // font-size: 3.5em;
     font-size: 5vw;
     color: #000;
     font-weight: 700;
@@ -312,6 +322,7 @@ select {
     display: flex;
     width: 15vw;
     height: 3.8vw;
+
     background: #f09d66;
     justify-content: center;
     align-items: center;
@@ -337,7 +348,7 @@ select {
     position: absolute;
     justify-content: space-between;
     //  настройка ромбиков +++
-    width: 15vw;
+    width: 12vw;
     margin: 0;
     left: 50%;
     transform: translate(-50%);
@@ -345,8 +356,10 @@ select {
     z-index: 45;
     li {
         transform: rotate(45deg);
-    } 
+    }
 }
+
+/*******************************/
 
 //<!-- -----slider------- -->
 .arrow-left {
@@ -374,7 +387,6 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // width: 1290px;
     margin: 0 auto;
     color: #fff;
     margin: 16px 0px;
@@ -542,10 +554,6 @@ select {
     }
 }
 
-// .title p {
-//     color: #000;
-// }
-
 hr {
     width: 400px;
     color: #d7d7d7;
@@ -556,6 +564,7 @@ hr {
 .colection {
     border: 1px solid #d7d7d7;
     margin: 0 auto;
+    // height: 732px;
     background: #fff;
     display: flex;
     justify-content: space-around;
@@ -607,7 +616,7 @@ hr {
     border-right: 25px solid transparent;
     height: 0;
     width: 130px;
-    bottom: 1px;
+    bottom: 2px;
 }
 
 .heart {
@@ -631,18 +640,6 @@ hr {
     bottom: 14px;
 }
 
-//<!-- romb for photo-collection -->
-.rombss-photo {
-    display: flex;
-    justify-content: center;
-}
-
-.rombsis {
-    display: flex;
-    justify-content: space-between;
-    width: 75px;
-    margin: 0px 0px 30px;
-}
 /* ********************************* */
 
 // -----------animation----------/
@@ -923,7 +920,7 @@ form {
     display: block;
 }
 
-//<!--  ----- modal -----  -->
+//<!--  ----- form for JS -----  -->
 .testModal{
     // затемнение экрана
     display: none;
@@ -934,6 +931,7 @@ form {
     left: 0;
     background: rgba(0,0,0,0.5);
     z-index: 30;
+
     position: fixed;
 }
 

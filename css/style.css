@@ -63,7 +63,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 13px;
-  z-index: 50;
 }
 
 .top-menu li {
@@ -117,7 +116,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 295px;
-  z-index: 50;
 }
 
 .bottom-menu li {
@@ -195,7 +193,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 340px;
-  z-index: 50;
 }
 
 .social-menu li {
@@ -317,6 +314,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* !!! в макете 257рх, но визуально бОльше за счет паддинга, заменила на 200рх */
   width: 15vw;
   height: 15vw;
   border: 0.3em double #fff;
@@ -404,7 +402,7 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 15vw;
+  width: 12vw;
   margin: 0;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -418,6 +416,24 @@ select {
           transform: rotate(45deg);
 }
 
+.romb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b2b2b2;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.romb:hover {
+  background: #000;
+  cursor: pointer;
+}
+
+/*******************************/
 .arrow-left {
   position: absolute;
   top: 283px;
@@ -700,7 +716,7 @@ hr {
   border-right: 25px solid transparent;
   height: 0;
   width: 130px;
-  bottom: 1px;
+  bottom: 2px;
 }
 
 .heart {

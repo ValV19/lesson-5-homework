@@ -178,6 +178,9 @@
   .social-menu li {
     border: none;
   }
+  .main-girls {
+    background-position-x: 50%;
+  }
   .sale {
     margin-top: 35vw;
   }
@@ -422,5 +425,9 @@
   .button {
     margin-right: 20px;
   }
+}
+
+.botton input {
+  width: 77px;
 }
 /*# sourceMappingURL=media.css.map */

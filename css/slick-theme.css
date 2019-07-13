@@ -61,6 +61,7 @@
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
+
     opacity: .75;
     color: rgb(255, 255, 255);
 
@@ -107,7 +108,7 @@
     margin-bottom: 30px;
 }
 
-/* --- точки слайдера внизу */
+/* ---цвет фона точек */
 #slick-slide-control00 {
     background: #b2b2b2;
     color:#b2b2b2;
@@ -120,6 +121,7 @@
 
 #slick-slide-control01 {
     background: #b2b2b2;
+    color:#b2b2b2;
     border: 1px solid  #b2b2b2;
     width: 1.2em;
     height: 1.2em;
@@ -147,25 +149,34 @@
     font-size: 1.5vw;
 }
 
-#slick-slide-control00:hover {
+#slick-slide-control00:hover,
+#slick-slide-control00:focus {
     background: #000;
-    color:#000;
+    color: rgba(0, 0, 0, 0);
+    border: 1px solid #000;
 }
 
-#slick-slide-control01:hover {
+
+#slick-slide-control01:hover,
+#slick-slide-control01:focus {
     background: #000;
-    color:#000;
+    color: rgba(0, 0, 0, 0);
+    border: 1px solid #000;
 }
 
-#slick-slide-control02:hover {
+#slick-slide-control02:hover,
+#slick-slide-control02:focus {
     background: #000;
-    color:#000;
+    color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
-#slick-slide-control03:hover {
+#slick-slide-control03:hover,
+#slick-slide-control03:focus {
     background: #000;
-    color:#000;
-}/*  точки слайдера --- */
+    color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+}/* цвет фона точек --- */
 
 .slick-dots {
     position: absolute;
@@ -175,7 +186,9 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    text-align: center;   
+    text-align: center;
+    
+    
 }
 
 .slick-dots li {
@@ -186,6 +199,8 @@
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
+  
+    
 }
 
 .slick-dots li button {
@@ -200,17 +215,21 @@
     border: 0;
     outline: none;
     background: transparent;
+
 }
 
 .slick-dots li button:hover,
 .slick-dots li button:focus {
     outline: none;
     background: red;
+   
 }
 
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
     opacity: 1;
+    
+   
 }
 
 .slick-dots li button:before {
@@ -225,6 +244,7 @@
     content: '•';
     text-align: center;
     opacity: 1;
+    /* color: black; */
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
