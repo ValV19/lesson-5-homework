@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>homework-5</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style51.css">
-    <!-- подключаем 3 гугл-шрифта -->
+    <!-- google-fonts for project -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  <!-- иконки и значки -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&amp;subset=cyrillic" rel="stylesheet"> <!-- для меню home-gallery -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> <!-- основные скачанные шрифты -->
-    <!-- медиазапросы -->
-    <link rel="stylesheet" href="./css/media960.css">
-    <link rel="stylesheet" href="./css/media768.css">
-    <link rel="stylesheet" href="./css/media480.css">
-    
+    <!-- ---style---- -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- responsive - media-query -->
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>        <!-- подключаем стили слайдера jQ (скачать, скопировать в папку css) -->
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>  <!-- подключаем стили слайдера jQ -->
 </head>
 <body>
     <div class="bbody">
+        <a name="toTop"></a>
         <!-- -----header-top----- -->
         <div class="header-top">
             <div class="wrapper">
@@ -28,9 +29,9 @@
                         <li><a href="#">Welcome msg!</a></li>
                         <li><a href="#">My account</a></li>
                         <li><a href="#">My whistlist</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#" id="logoId">Login</a></li>
                     </ul> 
-                    <a href="#" class="mobile"> <i class="fas fa-bars"></i> </a>
+                    <a href="#" class="mobile" id="mobileId"><i class="fas fa-bars"></i></a>
                 </div>
             </div>
         </div>
@@ -40,11 +41,44 @@
                 <div class="bar-bottom">
                     <div class="bar">
                         <ul class="bottom-menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Categories</a></li>
-                            <li><a href="#">Pages</a></li>
-                        </ul> 
+                            <!-- выпадающее меню -->
+                            <li class="has-sub">
+                                <a href="#">Home</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Home 1</a></li>
+                                    <li><a href="">Home 2</a></li>
+                                    <li><a href="">Home 3</a></li>
+                                    <li><a href="">Home 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Gallery</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Gallery 1</a></li>
+                                    <li><a href="">Gallery 2</a></li>
+                                    <li><a href="">Gallery 3</a></li>
+                                    <li><a href="">Gallery 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Categories</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Categories 1</a></li>
+                                    <li><a href="">Categories 2</a></li>
+                                    <li><a href="">Categories 3</a></li>
+                                    <li><a href="">Categories 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Pages 1</a></li>
+                                    <li><a href="">Pages 2</a></li>
+                                    <li><a href="">Pages 3</a></li>
+                                    <li><a href="">Pages 4</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!--  выпадающее меню -->
                         <a href="#" class="logo">Shophia</a>
                         <ul class="social-menu">
                             <li><a target="_blank" href="https://www.google.com.ua/"><i class="fab fa-facebook-f"></i></a></li>
@@ -66,48 +100,26 @@
         </div>
         <!-- ----sale-2-girls-----  -->
         <div class="main-girls">
-        <div class="wrapper">
-            <div class="girls">
+            <!--  слайдер -->
+            <div class="slider">       
+                <img src="./img/2girls2-1.jpg" alt="slide 1">
+                <img src="./img/2girls2-2.jpg" alt="slide 2">
+                <img src="./img/2girls2-3.jpg" alt="slide 3">
+                <img src="./img/2girls2-4.jpg" alt="slide 4">
+            </div> 
+            <div class="wrapper">
+            <!-- центральный квадрат -->
+            <div class="girls">          
                 <div class="sale">
-                    <p class="s1">Mid-season</p>
-                    <p class="s2">Sale</p>
-                    <p class="s3">Up to</p>
-                    <p class="s4">50 %   off</p>
+                    <p class="s-one">Mid-season</p>
+                    <p class="s-two">Sale</p>
+                    <p class="s-three">Up to</p>
+                    <p class="s-four">50 % off</p>
                     <img src="./img/line-sale.png" alt="">
-                </div>
+                </div>               
+                <!-- центральная кнопка -->
                 <div class="SHOP_NOW">
                     <input type="button" value="SHOP NOW">
-                </div>
-                    <div>
-                        <!-- ------pomb----- -->
-                        <div class="rombss">
-                            <div class="romb"></div>
-                            <div class="romb"></div>
-                            <div class="romb"></div>
-                        </div>
-                    </div>
-                    <!-- -----slider------- -->
-                    <div class="arrow-left">
-                        <a href="#"> <i class="fas fa-chevron-left"></i>  </a>
-                    </div>
-                    <div class="arrow-right">
-                        <a href="#"> <i class="fas fa-chevron-right"></i> </a>
-                    </div>
-
-                    <!--  ----- form for JS -----  -->
-                    <!-- <div >
-                        <form class="sign-in" action="#" method="GET">
-                            <p class="sign">sign-in</p>
-
-                            <input type="text" name="username" placeholder="username" size="40">
-                            <input type="password" name="password" placeholder="password" size="40">
-                            
-                            <p class="keep"><i class="fas fa-times"></i> Keep me sighed in.</p>
-                            <div class="botton">
-                                <input type="submit" value="sign in">
-                            </div>               
-                        </form>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -157,12 +169,14 @@
             </div>
          </div>
         <!-- summer collection -->  
-        <div class="title">
-            <hr  align-items="arrow-left"/>
-            <div class="bej-romb"></div>
-            <p>Summer Collection</p>
-            <div class="bej-romb"></div>
-            <hr  align-items="arrow-right"/>
+        <div class="wrapper">
+            <div class="title">
+                <hr  align-items="arrow-left"/>
+                <div class="bej-romb"></div>
+                <p>Summer Collection</p>
+                <div class="bej-romb"></div>
+                <hr  align-items="arrow-right"/>
+            </div>
         </div>
         <!-- photo-collection -->
         <div class="wrapper"> 
@@ -314,11 +328,6 @@
                             <li>Designed by  MoccaLabs.com</li>
                         </ul> 
                     </div>
-                    <div class="button">
-                        <form>
-                            <input type="button" name="button" value="^"/>
-                        </form>
-                    </div>
                     <div class="down-cards">
                         <div>
                             <img src="./img/cards.png" alt="">
@@ -328,6 +337,82 @@
             </div>
         </div>
     </div>
+    <!--  -----black mobile-menu -----  -->
+    <div class="mobile-menu" id="mobileBar">
+        <ul class="top-menu-mobile">
+                <span id="closeMbl" class="close-mobile"><i class="far fa-window-close"></i></span>
+            <li><a href="#">Welcome msg!</a></li>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">My whistlist</a></li>
+            <li><a href="#" id="logoMobile">Login</a></li>
+        </ul> 
+        <hr  align-items="left"  width="1000px"/>
+        <ul class="bottom-menu-mobile">
+            <!-- mobile sub menu -->
+            <li class="has-sub-mobile">
+                <a href="#">Home</a>
+                <ul class="sub-menu-mobile">
+                    <li><a href="">Home 1</a></li>
+                    <li><a href="">Home 2</a></li>
+                    <li><a href="">Home 3</a></li>
+                    <li><a href="">Home 4</a></li>
+                </ul>
+            </li>
+            <li class="has-sub-mobile">
+                <a href="#">Gallery</a>
+                <ul class="sub-menu-mobile">
+                    <li><a href="">Gallery 1</a></li>
+                    <li><a href="">Gallery 2</a></li>
+                    <li><a href="">Gallery 3</a></li>
+                    <li><a href="">Gallery 4</a></li>
+                </ul>
+            </li>
+            <li class="has-sub-mobile">
+                <a href="#">Categories</a>
+                <ul class="sub-menu-mobile">
+                    <li><a href="">Categories 1</a></li>
+                    <li><a href="">Categories 2</a></li>
+                    <li><a href="">Categories 3</a></li>
+                    <li><a href="">Categories 4</a></li>
+                </ul>
+            </li>
+            <li class="has-sub-mobile">
+                <a href="#">Pages</a>
+                <ul class="sub-menu-mobile">
+                    <li><a href="">Pages 1</a></li>
+                    <li><a href="">Pages 2</a></li>
+                    <li><a href="">Pages 3</a></li>
+                    <li><a href="">Pages 4</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </div><!--  ----- mobile-menu -----  -->
+    <!--  ----- modal -----  -->
+    <div class="testModal" id="modal">
+        <form class="sign-in"  action="#" method="GET">
+            <span id="closeBtn" class="close-modal"><i class="far fa-window-close"></i></span>
+            <p class="sign">sign-in</p>
+            <input type="text" name="username" placeholder="username" size="38">
+            <input type="password" name="password" placeholder="password" size="38">
+            <p class="keep"><i class="fas fa-times"></i>Keep me sighed in.</p>
+            <div class="botton">
+                <input type="submit" value="sign in">
+            </div>               
+        </form>
+    </div> <!--  ----- modal end-----  -->
+    <!--  ----- toTop -----  -->
+    <a class="button" id="toTop">
+        <i class="fas fa-angle-up"></i>
+    </a>  <!--  ----- toTop end -----  -->
+
+    <!-- ------- slider ---- -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script> <!-- подключаем jquery -->
+       
+    <script type="text/javascript" src="./js/slick.js"></script> <!-- подключаем функционал слайдера, подключила js из скачанного архива -->
+
+    <script type="text/javascript" src="./js/index.js"></script>  <!-- подключаем свой файл index.js -->
+    <!-- -------slider end ---- -->
+    
 </body>
 </html>
 
