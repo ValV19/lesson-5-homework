@@ -22,6 +22,14 @@
   hr {
     width: 250px;
   }
+  .supp img {
+    width: 45px;
+    height: 45px;
+    margin: 31px 27px 31px 10px;
+  }
+  .cc {
+    padding-left: 15px;
+  }
   .colection {
     margin-bottom: 30px;
   }
@@ -41,7 +49,6 @@
     font-size: 13px;
   }
   .header-bottom {
-    height: 175px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -65,9 +72,6 @@
   .social-menu {
     width: 300px;
     padding-left: 90px;
-  }
-  .sale {
-    margin-top: 35vw;
   }
   /* <!-- ------support-------- --> */
   .left {
@@ -180,9 +184,6 @@
   }
   .main-girls {
     background-position-x: 50%;
-  }
-  .sale {
-    margin-top: 35vw;
   }
   .arrow-left {
     top: 283px;
@@ -351,10 +352,7 @@
     text-align: left;
   }
   .logo {
-    font-size: 60px;
-  }
-  .sale {
-    margin-top: 50vw;
+    font-size: 45px;
   }
   /* <!-- ------support-------- --> */
   .general {

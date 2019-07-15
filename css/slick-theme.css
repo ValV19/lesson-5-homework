@@ -117,6 +117,7 @@
     height: 1.2em;
     color: rgba(0, 0, 0, 0);
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
 #slick-slide-control01 {
@@ -127,6 +128,7 @@
     height: 1.2em;
     color: rgba(0, 0, 0, 0);
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
 #slick-slide-control02 {
@@ -137,6 +139,7 @@
     height: 1.2em;
     color: rgba(0, 0, 0, 0);
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
 #slick-slide-control03 {
@@ -147,6 +150,7 @@
     height: 1.2em;
     color: rgba(0, 0, 0, 0);
     font-size: 1.5vw;
+    cursor: pointer;
 }
 
 #slick-slide-control00:hover,
@@ -187,8 +191,6 @@
     margin: 0;
     list-style: none;
     text-align: center;
-    
-    
 }
 
 .slick-dots li {
@@ -199,8 +201,6 @@
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
-  
-    
 }
 
 .slick-dots li button {
@@ -215,21 +215,17 @@
     border: 0;
     outline: none;
     background: transparent;
-
 }
 
 .slick-dots li button:hover,
 .slick-dots li button:focus {
     outline: none;
     background: red;
-   
 }
 
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
     opacity: 1;
-    
-   
 }
 
 .slick-dots li button:before {
